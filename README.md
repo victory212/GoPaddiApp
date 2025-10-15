@@ -9,8 +9,8 @@ TripPlanner is a travel management app that allows users to create, view, edit, 
 ### Technology Stack
 - **SwiftUI**: Used for HomeView, TripListView, and TripDetailView (~70%)
 - **UIKit (Programmatic)**: Used for CreateTripViewController (~30%)
-- **Swift**: 5.7+
-- **iOS**: 15.0+
+- **Swift**: 6
+- **iOS**: 26.0+
 - **API**: Beeceptor CRUD API for backend operations
 
 ## ✨ Features
@@ -31,40 +31,9 @@ TripPlanner is a travel management app that allows users to create, view, edit, 
 ### Prerequisites
 
 Before you begin, ensure you have:
-- macOS with Xcode 14.0 or later installed
+- macOS with Xcode 15.0 or later installed
 - An active internet connection
 - Basic familiarity with iOS development
-
-### Installation Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/TripPlanner.git
-   cd TripPlanner
-   ```
-
-2. **Open in Xcode**
-   ```bash
-   open TripPlanner.xcodeproj
-   ```
-   Or double-click the `.xcodeproj` file
-
-3. **Configure API Endpoint**
-   
-   Open `Services/APIService.swift` and update the base URL:
-   ```swift
-   private let baseURL = "https://YOUR-ENDPOINT.free.beeceptor.com"
-   ```
-   
-   To get your Beeceptor endpoint:
-   - Visit https://beeceptor.com/crud-api/
-   - Create a free endpoint (e.g., "tripplanner-yourname")
-   - Copy the generated URL
-
-4. **Build and Run**
-   - Select your target device or simulator (iPhone 14 Pro recommended)
-   - Press `Cmd + R` or click the Run button
-   - The app will build and launch
 
 ## 📡 API Integration
 

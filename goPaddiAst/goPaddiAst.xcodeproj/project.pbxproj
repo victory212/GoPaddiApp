@@ -292,6 +292,7 @@
 				DEVELOPMENT_TEAM = YMS4877ST3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goPaddiAst/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripPlanner;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,6 +325,7 @@
 				DEVELOPMENT_TEAM = YMS4877ST3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goPaddiAst/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripPlanner;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
