@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V3G-KI-pVA">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="p7b-be-cr1">
+            <objects>
+                <viewController id="V3G-KI-pVA" customClass="HomeViewController" customModule="goPaddiAst" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3tP-zU-6jt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to\nTripPlanner ✈️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6v-i1-4Pp">
+                                <rect key="frame" x="27.333333333333343" y="178" width="338.33333333333326" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan your perfect journey with ease" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jr4-MM-hoo">
+                                <rect key="frame" x="55" y="218" width="283" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Nkz-Hj-avV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jKR-g6-5bI">
+                                <rect key="frame" x="20" y="280" width="353" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Ata-EU-hPF"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzf-6p-dXB">
+                                <rect key="frame" x="40" y="708" width="313" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getStartedButtonTapped:" destination="V3G-KI-pVA" eventType="touchUpInside" id="gIc-B2-0ID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XAT-Yz-SLw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XAT-Yz-SLw" firstAttribute="bottom" secondItem="mzf-6p-dXB" secondAttribute="bottom" constant="40" id="2dD-rq-f9c"/>
+                            <constraint firstItem="jr4-MM-hoo" firstAttribute="top" secondItem="K6v-i1-4Pp" secondAttribute="bottom" constant="8.6666666666666572" id="JdW-Jd-JRx"/>
+                            <constraint firstItem="mzf-6p-dXB" firstAttribute="leading" secondItem="XAT-Yz-SLw" secondAttribute="leading" constant="40" id="Jnb-Vt-oIf"/>
+                            <constraint firstItem="jr4-MM-hoo" firstAttribute="leading" secondItem="XAT-Yz-SLw" secondAttribute="leading" constant="55" id="NWN-Np-BUA"/>
+                            <constraint firstItem="jr4-MM-hoo" firstAttribute="centerX" secondItem="K6v-i1-4Pp" secondAttribute="centerX" id="lG2-PU-dqt"/>
+                            <constraint firstItem="XAT-Yz-SLw" firstAttribute="trailing" secondItem="mzf-6p-dXB" secondAttribute="trailing" constant="40" id="md0-m8-ynR"/>
+                            <constraint firstItem="K6v-i1-4Pp" firstAttribute="top" secondItem="XAT-Yz-SLw" secondAttribute="top" constant="60" id="mdB-jT-Q2k"/>
+                            <constraint firstItem="K6v-i1-4Pp" firstAttribute="centerX" secondItem="3tP-zU-6jt" secondAttribute="centerX" id="qKc-gC-OV0"/>
+                            <constraint firstItem="jKR-g6-5bI" firstAttribute="top" secondItem="jr4-MM-hoo" secondAttribute="bottom" constant="40" id="tVT-iq-VPu"/>
+                            <constraint firstItem="jKR-g6-5bI" firstAttribute="leading" secondItem="XAT-Yz-SLw" secondAttribute="leading" constant="20" id="tqi-5k-zr8"/>
+                            <constraint firstItem="XAT-Yz-SLw" firstAttribute="trailing" secondItem="jKR-g6-5bI" secondAttribute="trailing" constant="20" id="yVQ-Ss-RBJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="featureStackView" destination="jKR-g6-5bI" id="s9U-e3-AJI"/>
+                        <outlet property="getStartedButton" destination="mzf-6p-dXB" id="Brq-T9-L1G"/>
+                        <outlet property="subtitleLabel" destination="jr4-MM-hoo" id="8YI-nW-K08"/>
+                        <outlet property="titleLabel" destination="K6v-i1-4Pp" id="lio-hM-qkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-wt-dMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-240" y="109"/>
+        </scene>
+        <!--Trip List View Controller-->
+        <scene sceneID="gbS-Lq-9nN">
+            <objects>
+                <viewController id="rkb-xj-owg" customClass="TripListViewController" customModule="goPaddiAst" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e37-W9-ZGM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vlK-g8-oKf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmd-jY-i2s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
