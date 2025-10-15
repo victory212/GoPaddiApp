@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -20,10 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateInitialViewController()
+        let homeView = HomeView()
+        let hostingController = UIHostingController(rootView: homeView)
+        window?.rootViewController = hostingController
         
-        window?.rootViewController = initialViewController
+        //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //        let initialViewController = storyboard.instantiateInitialViewController()
+        //
+        //        window?.rootViewController = initialViewController
+        
         window?.makeKeyAndVisible()
         
         
